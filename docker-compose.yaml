@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0.25
+    environment:
+      MYSQL_ROOT_PASSWORD: "MICROLABtechnosp80"
+    ports:
+      - 3306
+    volumes:
+      - mysql-data:/var/lib/mysql
